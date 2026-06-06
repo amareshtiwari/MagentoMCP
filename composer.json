@@ -1,0 +1,49 @@
+{
+  "name": "amareshtiwari/magento-mcp",
+  "description": "Magento 2 Model Context Protocol (MCP) server module and AI connector for exposing catalog, sales, customer, quote, coupon, and system data through a token-protected JSON-RPC endpoint.",
+  "type": "magento2-module",
+  "keywords": [
+    "magento2",
+    "magento",
+    "adobe-commerce",
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "magento-mcp",
+    "magento2-mcp",
+    "magento-model-context-protocol",
+    "json-rpc",
+    "ai",
+    "ai-assistant",
+    "ai-integration",
+    "ai-connector",
+    "commerce-ai",
+    "automation",
+    "catalog",
+    "sales",
+    "orders",
+    "customers",
+    "quotes",
+    "coupons"
+  ],
+  "homepage": "https://github.com/amareshtiwari/MagentoMCP",
+  "support": {
+    "source": "https://github.com/amareshtiwari/MagentoMCP",
+    "issues": "https://github.com/amareshtiwari/MagentoMCP/issues"
+  },
+  "require": {
+    "php": "^8.1",
+    "magento/framework": "*",
+    "magento/module-catalog": "*",
+    "magento/module-sales": "*",
+    "magento/module-store": "*"
+  },
+  "autoload": {
+    "files": [
+      "app/code/Amaresh/Mcp/registration.php"
+    ],
+    "psr-4": {
+      "Amaresh\\Mcp\\": "app/code/Amaresh/Mcp/"
+    }
+  }
+}

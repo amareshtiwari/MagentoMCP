@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Amaresh\Mcp\Model\ToolRegistry">
+        <arguments>
+            <argument name="tools" xsi:type="array">
+                <item name="system_health" xsi:type="object">Amaresh\Mcp\Model\Tool\SystemHealth</item>
+                <item name="catalog_search" xsi:type="object">Amaresh\Mcp\Model\Tool\CatalogSearch</item>
+                <item name="catalog_product_get" xsi:type="object">Amaresh\Mcp\Model\Tool\ProductGet</item>
+                <item name="sales_order_get" xsi:type="object">Amaresh\Mcp\Model\Tool\OrderGet</item>
+                <item name="sales_order_search" xsi:type="object">Amaresh\Mcp\Model\Tool\OrderSearch</item>
+                <item name="customer_get" xsi:type="object">Amaresh\Mcp\Model\Tool\CustomerGet</item>
+                <item name="customer_search" xsi:type="object">Amaresh\Mcp\Model\Tool\CustomerSearch</item>
+                <item name="cart_price_rule_search" xsi:type="object">Amaresh\Mcp\Model\Tool\CartPriceRuleSearch</item>
+                <item name="sales_rule_coupon_search" xsi:type="object">Amaresh\Mcp\Model\Tool\SalesRuleCouponSearch</item>
+                <item name="quote_search" xsi:type="object">Amaresh\Mcp\Model\Tool\QuoteSearch</item>
+                <item name="quote_get" xsi:type="object">Amaresh\Mcp\Model\Tool\QuoteGet</item>
+                <item name="quote_activity_summary" xsi:type="object">Amaresh\Mcp\Model\Tool\QuoteActivitySummary</item>
+                <item name="coupon_performance_summary" xsi:type="object">Amaresh\Mcp\Model\Tool\CouponPerformanceSummary</item>
+                <item name="customer_activity_summary" xsi:type="object">Amaresh\Mcp\Model\Tool\CustomerActivitySummary</item>
+                <item name="product_cart_summary" xsi:type="object">Amaresh\Mcp\Model\Tool\ProductCartSummary</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

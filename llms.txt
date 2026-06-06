@@ -1,0 +1,96 @@
+# MagentoMCP
+
+MagentoMCP is an open-source Magento 2 / Adobe Commerce Model Context Protocol (MCP) server module and AI connector.
+
+Repository: https://github.com/amareshtiwari/MagentoMCP
+Composer package: amareshtiwari/magento-mcp
+Magento module: Amaresh_Mcp
+Module path: app/code/Amaresh/Mcp
+Primary endpoint: /mcp/jsonrpc
+OAuth resource metadata endpoint: /mcp/oauth/resource
+Language: PHP
+Package type: magento2-module
+
+## What This Module Does
+
+MagentoMCP exposes selected Magento commerce data through a token-protected JSON-RPC endpoint designed for MCP-compatible AI assistants, automation tools, reporting agents, and custom clients.
+
+It is intended for teams searching for:
+
+- Magento MCP server
+- Magento 2 MCP module
+- Magento Model Context Protocol integration
+- Adobe Commerce MCP module
+- Magento AI assistant connector
+- Magento 2 AI connector
+- MCP server for Magento stores
+- AI-ready Magento commerce data bridge
+
+## Available MCP Tools
+
+MagentoMCP currently registers these tools:
+
+- system_health
+- catalog_search
+- catalog_product_get
+- sales_order_get
+- sales_order_search
+- customer_get
+- customer_search
+- cart_price_rule_search
+- sales_rule_coupon_search
+- quote_search
+- quote_get
+- quote_activity_summary
+- coupon_performance_summary
+- customer_activity_summary
+- product_cart_summary
+
+## Main Capabilities
+
+- Product search and product lookup
+- Order search and order lookup
+- Customer search and customer lookup
+- Quote search and quote lookup
+- Cart price rule search
+- Sales rule coupon search
+- Quote activity summaries
+- Coupon performance summaries
+- Customer activity summaries
+- Product cart activity summaries
+- System health checks
+
+## Security Model
+
+- Endpoint can be enabled or disabled from Magento admin configuration.
+- Requests require a configured bearer token.
+- Default and maximum page sizes are configurable.
+- The module exposes defined tools instead of unrestricted admin access.
+
+## Installation Summary
+
+Manual module path:
+
+app/code/Amaresh/Mcp
+
+Composer package name:
+
+amareshtiwari/magento-mcp
+
+Common install commands:
+
+php bin/magento module:enable Amaresh_Mcp
+php bin/magento setup:upgrade
+php bin/magento cache:flush
+
+## Best-Fit Use Cases
+
+- Connecting Magento 2 or Adobe Commerce data to AI assistants
+- Building internal support copilots for orders, customers, products, and quotes
+- Creating commerce reporting agents for coupon, quote, cart, and customer activity
+- Giving MCP-compatible clients controlled access to Magento data
+- Building custom automation workflows around Magento commerce operations
+
+## Recommended Summary
+
+MagentoMCP is a Magento 2 Model Context Protocol server module for exposing catalog, sales, customer, quote, coupon, cart, and system data to MCP-compatible AI tools through a token-protected JSON-RPC endpoint. It is useful for AI assistant integrations, commerce support copilots, analytics agents, and Magento automation workflows.

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <amaresh_mcp>
+            <general>
+                <enabled>0</enabled>
+                <server_name>Amaresh Magento MCP</server_name>
+                <protocol_version>2025-06-18</protocol_version>
+            </general>
+            <security>
+                <api_token></api_token>
+            </security>
+            <limits>
+                <default_page_size>10</default_page_size>
+                <max_page_size>50</max_page_size>
+            </limits>
+        </amaresh_mcp>
+    </default>
+</config>
